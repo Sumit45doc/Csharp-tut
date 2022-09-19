@@ -25,10 +25,20 @@ namespace HelloWorld
             // Console.WriteLine(Convert.ToDouble(myInt));
             // Console.WriteLine(true);
 
-            string userName = Console.ReadLine();
-            Console.Write(userName);
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.Write(age + 10);
+            // string userName = Console.ReadLine();
+            // Console.Write(userName);
+            // int age = Convert.ToInt32(Console.ReadLine());
+            // Console.Write(age + 10);
+
+
+            // operator is same as javascript 
+
+            // math is same as js
+            // Console.WriteLine(Math.Abs(-10));
+            // Console.WriteLine(Math.Ceiling(6.3));
+            // Console.WriteLine(Math.Floor(6.3));
+            // int a = (int) Math.Pow(10, 2);
+            // Console.WriteLine(a);
         }
     }
 }
