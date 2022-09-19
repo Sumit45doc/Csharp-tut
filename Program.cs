@@ -9,6 +9,9 @@ namespace HelloWorld
     {
         static void Main(string[] args){
             Console.WriteLine("Hello ladies !!!");
+            Console.WriteLine("This is next line");
+            Console.Write("Came Line should apper ");
+            Console.Write("Came Line should apper ");
         }
     }
 }
