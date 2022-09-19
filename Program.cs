@@ -14,7 +14,7 @@ namespace HelloWorld
 
             // variable types
             // int, double, string, char, bool
-            // use const to avoid reassigning of variable 
+            // use const to avoid reassigning of variable
 
             // double num = 10.2D;
             // Console.WriteLine(number1 + number2);
@@ -31,7 +31,7 @@ namespace HelloWorld
             // Console.Write(age + 10);
 
 
-            // operator is same as javascript 
+            // operator is same as javascript
 
             // math is same as js
             // Console.WriteLine(Math.Abs(-10));
@@ -44,24 +44,27 @@ namespace HelloWorld
             // string
 
             // NOTE: All the prebuild method are in pascal only variables are in camelCase
-            string name = "sumit kumarsharma";
+            // string name = "sumit kumarsharma";
             // Console.WriteLine(name.Length);
             // Console.WriteLine("Name is upper case " + name.ToUpper());
             // Console.WriteLine("Name in lower case " + name.ToLower());
 
 
             // interpolation;
-            string description = $"{name} is very talent person in the world";
-            Console.WriteLine(description);
+            // string description = $"{name} is very talent person in the world";
+            // Console.WriteLine(description);
 
-            // indexof 
+            // indexof
             // Console.WriteLine(name.IndexOf("e"));
 
             // substring
-            Console.WriteLine(name.Substring(name.IndexOf("a"), 2));
+            // Console.WriteLine(name.Substring(name.IndexOf("a"), 2));
 
-            
-
+            // foreach loop
+            int[] arr = { 1, 2, 3 };
+            foreach (int item in arr) {
+                Console.WriteLine($"{item} is the looping numbers!!");
+            }
         }
     }
 }
