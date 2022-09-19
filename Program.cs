@@ -19,10 +19,11 @@ namespace HelloWorld
             // double num = 10.2D;
             // Console.WriteLine(number1 + number2);
             // Console.WriteLine(num);
-            float explicitNum = 10.5F;
+            float explicitNum = 10;
             int myInt = (int) explicitNum;
-            Console.WriteLine(myInt);
-
+            Console.WriteLine(Convert.ToString(myInt));
+            Console.WriteLine(Convert.ToDouble(myInt));
+            Console.WriteLine(true);
         }
     }
 }
