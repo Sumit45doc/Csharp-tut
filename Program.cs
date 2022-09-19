@@ -39,6 +39,26 @@ namespace HelloWorld
             // Console.WriteLine(Math.Floor(6.3));
             // int a = (int) Math.Pow(10, 2);
             // Console.WriteLine(a);
+
+
+            // string
+
+            // NOTE: All the prebuild method are in pascal only variables are in camelCase
+            string name = "sumit kumar sharma";
+            // Console.WriteLine(name.Length);
+            // Console.WriteLine("Name is upper case " + name.ToUpper());
+            // Console.WriteLine("Name in lower case " + name.ToLower());
+
+
+            // interpolation;
+            string description = $"{name} is very talent person in the world";
+            Console.WriteLine(description);
+
+            // indexof 
+            Console.WriteLine(name.IndexOf("e"));
+            
+
+
         }
     }
 }
