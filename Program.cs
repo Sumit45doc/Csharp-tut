@@ -44,7 +44,7 @@ namespace HelloWorld
             // string
 
             // NOTE: All the prebuild method are in pascal only variables are in camelCase
-            string name = "sumit kumar sharma";
+            string name = "sumit kumarsharma";
             // Console.WriteLine(name.Length);
             // Console.WriteLine("Name is upper case " + name.ToUpper());
             // Console.WriteLine("Name in lower case " + name.ToLower());
@@ -55,9 +55,12 @@ namespace HelloWorld
             Console.WriteLine(description);
 
             // indexof 
-            Console.WriteLine(name.IndexOf("e"));
-            
+            // Console.WriteLine(name.IndexOf("e"));
 
+            // substring
+            Console.WriteLine(name.Substring(name.IndexOf("a"), 2));
+
+            
 
         }
     }
