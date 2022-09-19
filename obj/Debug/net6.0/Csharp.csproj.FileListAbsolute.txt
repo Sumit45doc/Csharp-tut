@@ -1,0 +1,15 @@
+D:\my_workout\Csharp\bin\Debug\net6.0\Csharp.exe
+D:\my_workout\Csharp\bin\Debug\net6.0\Csharp.deps.json
+D:\my_workout\Csharp\bin\Debug\net6.0\Csharp.runtimeconfig.json
+D:\my_workout\Csharp\bin\Debug\net6.0\Csharp.dll
+D:\my_workout\Csharp\bin\Debug\net6.0\Csharp.pdb
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.csproj.AssemblyReference.cache
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.AssemblyInfoInputs.cache
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.AssemblyInfo.cs
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.csproj.CoreCompileInputs.cache
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.dll
+D:\my_workout\Csharp\obj\Debug\net6.0\refint\Csharp.dll
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.pdb
+D:\my_workout\Csharp\obj\Debug\net6.0\Csharp.genruntimeconfig.cache
+D:\my_workout\Csharp\obj\Debug\net6.0\ref\Csharp.dll
