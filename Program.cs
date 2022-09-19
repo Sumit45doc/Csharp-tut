@@ -19,11 +19,16 @@ namespace HelloWorld
             // double num = 10.2D;
             // Console.WriteLine(number1 + number2);
             // Console.WriteLine(num);
-            float explicitNum = 10;
-            int myInt = (int) explicitNum;
-            Console.WriteLine(Convert.ToString(myInt));
-            Console.WriteLine(Convert.ToDouble(myInt));
-            Console.WriteLine(true);
+            // float explicitNum = 10;
+            // int myInt = (int) explicitNum;
+            // Console.WriteLine(Convert.ToString(myInt));
+            // Console.WriteLine(Convert.ToDouble(myInt));
+            // Console.WriteLine(true);
+
+            string userName = Console.ReadLine();
+            Console.Write(userName);
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.Write(age + 10);
         }
     }
 }
