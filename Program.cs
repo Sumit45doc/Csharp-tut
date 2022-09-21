@@ -10,7 +10,17 @@ namespace HelloWorld
         // static void MyMethod(string name, int age){
         //     Console.WriteLine($"My name is {name}. I am {age} years old ");
         // }
-        string color = "red";
+        // string color = "red";
+
+        class Car
+        {
+            //         // field
+            public string color = "red";
+            //         // static void Start(){
+            //         //     Console.WriteLine("Start car ");
+            //         // }
+        }
+
         static void Main(string[] args)
         {
             // MyMethod("Sumit Kumar Sharma", 22);
@@ -89,13 +99,13 @@ namespace HelloWorld
             // Console.WriteLine(PlusMethod(1, 1.2));
 
 
-            // OOPs - Object Oriented Programming 
-            Program program = new Program();
-            Console.WriteLine(program.color);
+            // OOPs - Object Oriented Programming
+            // Program program = new Program();
+            // Console.WriteLine(program.color);
 
-
-
-
+            // Car car = new Car();
+            Car car = new Car();
+            Console.WriteLine(car.color);
         }
 
         // static int PlusMethod(int x, int y){
@@ -106,9 +116,4 @@ namespace HelloWorld
         //     return x + y;
         // }
     };
-    // class Car {
-    //     // field
-    //     string color = "red";
-
-    // }
 }
