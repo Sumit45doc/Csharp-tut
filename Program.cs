@@ -112,9 +112,20 @@ namespace HelloWorld
             // Program program = new Program();
             // Console.WriteLine(program.color);
 
-            Car car = new Car("red", 5);
+            // constructor
+            // Car car = new Car("red", 5);
             // Console.WriteLine(car.color);
-            car.Start();
+            // car.Start();
+
+            // access modifier
+            // public - access to all classes
+            // private - access within same class (by default)
+            // protect - access with same class and inheritance classes
+            // internal - access within assembly
+
+            // - private access modifier is used encapsulate data
+
+
         }
 
         // static int PlusMethod(int x, int y){
