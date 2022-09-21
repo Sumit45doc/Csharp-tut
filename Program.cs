@@ -10,6 +10,7 @@ namespace HelloWorld
         // static void MyMethod(string name, int age){
         //     Console.WriteLine($"My name is {name}. I am {age} years old ");
         // }
+        string color = "red";
         static void Main(string[] args)
         {
             // MyMethod("Sumit Kumar Sharma", 22);
@@ -84,16 +85,30 @@ namespace HelloWorld
             // Console.WriteLine(arr.Sum());
 
             // overloading
-            Console.WriteLine(PlusMethod(1, 1));
-            Console.WriteLine(PlusMethod(1, 1.2));
+            // Console.WriteLine(PlusMethod(1, 1));
+            // Console.WriteLine(PlusMethod(1, 1.2));
+
+
+            // OOPs - Object Oriented Programming 
+            Program program = new Program();
+            Console.WriteLine(program.color);
+
+
+
+
         }
 
-        static int PlusMethod(int x, int y){
-            return x + y;
-        }
-        static double PlusMethod(double x, double y){
-            Console.WriteLine("double");
-            return x + y;
-        }
-    }
+        // static int PlusMethod(int x, int y){
+        //     return x + y;
+        // }
+        // static double PlusMethod(double x, double y){
+        //     Console.WriteLine("double");
+        //     return x + y;
+        // }
+    };
+    // class Car {
+    //     // field
+    //     string color = "red";
+
+    // }
 }
