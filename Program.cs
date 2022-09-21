@@ -12,14 +12,14 @@ namespace HelloWorld
         // }
         // string color = "red";
 
-        class Car
-        {
+        // class Car
+        // {
             //         // field
-            public string color = "red";
+            // public string color = "red";
             //         // static void Start(){
             //         //     Console.WriteLine("Start car ");
             //         // }
-        }
+        // }
 
         static void Main(string[] args)
         {
