@@ -8,11 +8,17 @@ namespace HelloWorld
     class Car
     {
         //         // field
-        public string color = "red";
+        public string color;
+        public int numberOfSeats;
+
+        public Car(string col, int nos){
+            color = col;
+            numberOfSeats = nos;
+        }
 
         public void Start()
         {
-            Console.WriteLine("Start car ");
+            Console.WriteLine($"Car color is {color} and there are {numberOfSeats} seats in car");
         }
     }
 
@@ -106,9 +112,8 @@ namespace HelloWorld
             // Program program = new Program();
             // Console.WriteLine(program.color);
 
-            // Car car = new Car();
-            Car car = new Car();
-            Console.WriteLine(car.color);
+            Car car = new Car("red", 5);
+            // Console.WriteLine(car.color);
             car.Start();
         }
 
