@@ -7,8 +7,12 @@ namespace HelloWorld
 {
     class Program
     {
+        static void MyMethod(){
+            Console.WriteLine("This is my method code!!");
+        }
         static void Main(string[] args)
         {
+            MyMethod();
             // int number1 = 10;
             // int number2 = 10;
 
@@ -61,23 +65,23 @@ namespace HelloWorld
             // Console.WriteLine(name.Substring(name.IndexOf("a"), 2));
 
             // foreach loop
-            int[] arr = { 1, 3, 2 };
-            Console.WriteLine($"{arr} is real array");
-            foreach (int item in arr)
-            {
-                Console.WriteLine($"{item} is the looping numbers!!");
-            }
-            Array.Sort(arr);
-            Console.WriteLine($"{arr} is Sort array");
-            foreach (int item in arr)
-            {
-                Console.WriteLine($"{item} is the looping numbers!!");
-            }
+            // int[] arr = { 1, 3, 2 };
+            // Console.WriteLine($"{arr} is real array");
+            // foreach (int item in arr)
+            // {
+            //     Console.WriteLine($"{item} is the looping numbers!!");
+            // }
+            // Array.Sort(arr);
+            // Console.WriteLine($"{arr} is Sort array");
+            // foreach (int item in arr)
+            // {
+            //     Console.WriteLine($"{item} is the looping numbers!!");
+            // }
 
             // max, min, sum of array using Systemlinq;
-            Console.WriteLine(arr.Max());
-            Console.WriteLine(arr.Min());
-            Console.WriteLine(arr.Sum());
+            // Console.WriteLine(arr.Max());
+            // Console.WriteLine(arr.Min());
+            // Console.WriteLine(arr.Sum());
         }
     }
 }
