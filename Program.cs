@@ -7,12 +7,12 @@ namespace HelloWorld
 {
     class Program
     {
-        static void MyMethod(){
-            Console.WriteLine("This is my method code!!");
+        static void MyMethod(string name, int age){
+            Console.WriteLine($"My name is {name}. I am {age} years old ");
         }
         static void Main(string[] args)
         {
-            MyMethod();
+            MyMethod("Sumit Kumar Sharma", 22);
             // int number1 = 10;
             // int number2 = 10;
 
