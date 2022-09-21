@@ -7,12 +7,12 @@ namespace HelloWorld
 {
     class Program
     {
-        static void MyMethod(string name, int age){
-            Console.WriteLine($"My name is {name}. I am {age} years old ");
-        }
+        // static void MyMethod(string name, int age){
+        //     Console.WriteLine($"My name is {name}. I am {age} years old ");
+        // }
         static void Main(string[] args)
         {
-            MyMethod("Sumit Kumar Sharma", 22);
+            // MyMethod("Sumit Kumar Sharma", 22);
             // int number1 = 10;
             // int number2 = 10;
 
@@ -82,6 +82,18 @@ namespace HelloWorld
             // Console.WriteLine(arr.Max());
             // Console.WriteLine(arr.Min());
             // Console.WriteLine(arr.Sum());
+
+            // overloading
+            Console.WriteLine(PlusMethod(1, 1));
+            Console.WriteLine(PlusMethod(1, 1.2));
+        }
+
+        static int PlusMethod(int x, int y){
+            return x + y;
+        }
+        static double PlusMethod(double x, double y){
+            Console.WriteLine("double");
+            return x + y;
         }
     }
 }
