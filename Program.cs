@@ -5,6 +5,17 @@
 
 namespace HelloWorld
 {
+    class Car
+    {
+        //         // field
+        public string color = "red";
+
+        public void Start()
+        {
+            Console.WriteLine("Start car ");
+        }
+    }
+
     class Program
     {
         // static void MyMethod(string name, int age){
@@ -12,14 +23,6 @@ namespace HelloWorld
         // }
         // string color = "red";
 
-        // class Car
-        // {
-            //         // field
-            // public string color = "red";
-            //         // static void Start(){
-            //         //     Console.WriteLine("Start car ");
-            //         // }
-        // }
 
         static void Main(string[] args)
         {
@@ -106,6 +109,7 @@ namespace HelloWorld
             // Car car = new Car();
             Car car = new Car();
             Console.WriteLine(car.color);
+            car.Start();
         }
 
         // static int PlusMethod(int x, int y){
