@@ -139,9 +139,17 @@ namespace HelloWorld
             // cat.Run();
 
             // interface execution
-            TestMultipleInterface test = new TestMultipleInterface();
-            test.firstMethod();
-            test.secondMethod();
+            // TestMultipleInterface test = new TestMultipleInterface();
+            // test.firstMethod();
+            // test.secondMethod();
+
+
+            Level levelMeter = Level.medium;
+            Console.WriteLine(levelMeter);
+
+            int levelMeterInt = (int) Level.medium;
+            Console.WriteLine(levelMeterInt);
+
 
         }
 
@@ -198,20 +206,27 @@ namespace HelloWorld
     // Interface - contain only abstract method and properties. No field.
     // - Should be use instead of abstract class when there is no need of method with body and field.
 
-    interface IFirstInterface {
-        public void firstMethod();
-    }
-    interface ISecondInterface {
-        public void secondMethod();
-    }
+    // interface IFirstInterface {
+    //     public void firstMethod();
+    // }
+    // interface ISecondInterface {
+    //     public void secondMethod();
+    // }
 
-    class TestMultipleInterface : IFirstInterface, ISecondInterface{
-        public void firstMethod(){
-            Console.WriteLine("First method!!");
-        }
-        public void secondMethod(){
-            Console.WriteLine("second method!!");
-        }
+    // class TestMultipleInterface : IFirstInterface, ISecondInterface{
+    //     public void firstMethod(){
+    //         Console.WriteLine("First method!!");
+    //     }
+    //     public void secondMethod(){
+    //         Console.WriteLine("second method!!");
+    //     }
+    // }
+
+    // anum are constant with is unchangable and read-only
+    enum Level {
+        low,
+        medium,
+        high
     }
 
 }
