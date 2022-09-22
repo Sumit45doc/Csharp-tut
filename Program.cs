@@ -243,18 +243,35 @@ using System;
 
 namespace AddNumber
 {
-    class Program{
-
-        static double addToNumber(double x, double y){
+    class Program
+    {
+        static double addToNumber(double x, double y)
+        {
             return x + y;
         }
-        static void Main(string[] args){
-            Console.WriteLine("Enter two number");
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(addToNumber(x, y));
+        static string ReverseString(string word)
+        {
+            char[] reverseWord = new char[word.Length];
+            int j = 0;
+            for (int i = (word.Length - 1); i >= 0; i--)
+            {
+                Console.WriteLine(i);
+                reverseWord[j] = word[i];
+                j++;
+            }
+
+            return new string(reverseWord);
+        }
+
+        static void Main(string[] args)
+        {
+            // Console.WriteLine("Enter two number");
+            // int x = Convert.ToInt32(Console.ReadLine());
+            // int y = Convert.ToInt32(Console.ReadLine());
+
+            // Console.WriteLine(addToNumber(x, y));
+            Console.WriteLine(ReverseString("Sumit"));
         }
     }
-    
 }
