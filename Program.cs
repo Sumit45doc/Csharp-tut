@@ -156,7 +156,7 @@ namespace HelloWorld
     };
 
     // Inheritence
-    class Animal {
+     abstract class Animal {
         public int numberOfLegs;
         protected string animalName;
         public int lifeSpan;
@@ -168,6 +168,7 @@ namespace HelloWorld
             lifeSpan = ls;
         }
 
+        public abstract void Run(int speed);
         public void Speak(string sound){
             Console.WriteLine($"{animalName} speaks {sound}");
         }
@@ -182,7 +183,7 @@ namespace HelloWorld
         // private string animalName;
         public Cat(int nol, string an, int ls) : base(nol, an, ls) {}
 
-        public void Run(int speed = 10){
+        public override void Run(int speed = 10){
             Console.WriteLine($"{animalName} run at speed: {speed}km/hr");
         }
     }
