@@ -174,9 +174,7 @@ namespace HelloWorld
 
     class Cat : Animal {
         // private string animalName;
-        public Cat(int nol, string an, int ls) : base(nol, an, ls) {
-            animalName = an;
-        }
+        public Cat(int nol, string an, int ls) : base(nol, an, ls) {}
 
         public void Run(int speed = 10){
             Console.WriteLine($"{animalName} run at speed: {speed}km/hr");
