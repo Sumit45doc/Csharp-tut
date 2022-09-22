@@ -127,18 +127,21 @@ namespace HelloWorld
 
 
             // inheritence
-            Console.WriteLine("What is your Cat name?");
-            string animalName = Console.ReadLine();
+            // Console.WriteLine("What is your Cat name?");
+            // string animalName = Console.ReadLine();
 
-            Console.WriteLine("What is your Cat LifeSpan?");
-            int lifeSpan = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("What is your Cat LifeSpan?");
+            // int lifeSpan = Convert.ToInt32(Console.ReadLine());
 
-            Cat cat = new Cat(4, animalName, lifeSpan);
-            cat.Speak("meowing");
-            cat.Information();
-            cat.Run();
+            // Cat cat = new Cat(4, animalName, lifeSpan);
+            // cat.Speak("meowing");
+            // cat.Information();
+            // cat.Run();
 
-
+            // interface execution
+            TestMultipleInterface test = new TestMultipleInterface();
+            test.firstMethod();
+            test.secondMethod();
 
         }
 
@@ -153,38 +156,62 @@ namespace HelloWorld
         //     Console.WriteLine("double");
         //     return x + y;
         // }
+
+
+
     };
 
     // Inheritence
-     abstract class Animal {
-        public int numberOfLegs;
-        protected string animalName;
-        public int lifeSpan;
+    //  abstract class Animal {
+    //     public int numberOfLegs;
+    //     protected string animalName;
+    //     public int lifeSpan;
 
 
-        public Animal(int nol, string an, int ls){
-            numberOfLegs = nol;
-            animalName = an;
-            lifeSpan = ls;
-        }
+    //     public Animal(int nol, string an, int ls){
+    //         numberOfLegs = nol;
+    //         animalName = an;
+    //         lifeSpan = ls;
+    //     }
 
-        public abstract void Run(int speed);
-        public void Speak(string sound){
-            Console.WriteLine($"{animalName} speaks {sound}");
-        }
+    //     public abstract void Run(int speed);
+    //     public void Speak(string sound){
+    //         Console.WriteLine($"{animalName} speaks {sound}");
+    //     }
 
-        public void Information(){
-            Console.WriteLine($"{animalName} has {numberOfLegs} legs and can live upto {lifeSpan} yrs");
-        }
+    //     public void Information(){
+    //         Console.WriteLine($"{animalName} has {numberOfLegs} legs and can live upto {lifeSpan} yrs");
+    //     }
 
+    // }
+
+    // class Cat : Animal {
+    //     // private string animalName;
+    //     public Cat(int nol, string an, int ls) : base(nol, an, ls) {}
+
+    //     public override void Run(int speed = 10){
+    //         Console.WriteLine($"{animalName} run at speed: {speed}km/hr");
+    //     }
+    // }
+
+
+    // Interface - contain only abstract method and properties. No field.
+    // - Should be use instead of abstract class when there is no need of method with body and field.
+
+    interface IFirstInterface {
+        public void firstMethod();
+    }
+    interface ISecondInterface {
+        public void secondMethod();
     }
 
-    class Cat : Animal {
-        // private string animalName;
-        public Cat(int nol, string an, int ls) : base(nol, an, ls) {}
-
-        public override void Run(int speed = 10){
-            Console.WriteLine($"{animalName} run at speed: {speed}km/hr");
+    class TestMultipleInterface : IFirstInterface, ISecondInterface{
+        public void firstMethod(){
+            Console.WriteLine("First method!!");
+        }
+        public void secondMethod(){
+            Console.WriteLine("second method!!");
         }
     }
+
 }
