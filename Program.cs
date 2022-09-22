@@ -127,7 +127,13 @@ namespace HelloWorld
 
 
             // inheritence
-            Cat cat = new Cat(4, "Ankush Yadav", 75);
+            Console.WriteLine("What is your Cat name?");
+            string animalName = Console.ReadLine();
+
+            Console.WriteLine("What is your Cat LifeSpan?");
+            int lifeSpan = Convert.ToInt32(Console.ReadLine());
+
+            Cat cat = new Cat(4, animalName, lifeSpan);
             cat.Speak("meowing");
             cat.Information();
             cat.Run();
