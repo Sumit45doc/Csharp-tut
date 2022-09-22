@@ -126,7 +126,19 @@ namespace HelloWorld
             // - private access modifier is used encapsulate data
 
 
+            // inheritence
+            Cat cat = new Cat(4, "Ankush Yadav", 75);
+            cat.Speak("meowing");
+            cat.Information();
+            cat.Run();
+
+
+
         }
+
+
+
+
 
         // static int PlusMethod(int x, int y){
         //     return x + y;
@@ -136,4 +148,38 @@ namespace HelloWorld
         //     return x + y;
         // }
     };
+
+    // Inheritence
+    class Animal {
+        public int numberOfLegs;
+        protected string animalName;
+        public int lifeSpan;
+
+
+        public Animal(int nol, string an, int ls){
+            numberOfLegs = nol;
+            animalName = an;
+            lifeSpan = ls;
+        }
+
+        public void Speak(string sound){
+            Console.WriteLine($"{animalName} speaks {sound}");
+        }
+
+        public void Information(){
+            Console.WriteLine($"{animalName} has {numberOfLegs} legs and can live upto {lifeSpan} yrs");
+        }
+
+    }
+
+    class Cat : Animal {
+        // private string animalName;
+        public Cat(int nol, string an, int ls) : base(nol, an, ls) {
+            animalName = an;
+        }
+
+        public void Run(int speed = 10){
+            Console.WriteLine($"{animalName} run at speed: {speed}km/hr");
+        }
+    }
 }
